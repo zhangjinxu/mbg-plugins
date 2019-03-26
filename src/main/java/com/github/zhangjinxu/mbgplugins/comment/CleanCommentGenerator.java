@@ -21,7 +21,12 @@ import java.util.Set;
 
 import static org.mybatis.generator.internal.util.StringUtility.isTrue;
 
-public class CodegenCommentGenerator implements CommentGenerator {
+/**
+ * 生成干净的注释：
+ * 1.实体类的字段中包含表字段的注释
+ * 2.会添加@mbg.generator注释
+ */
+public class CleanCommentGenerator implements CommentGenerator {
     private Properties properties;
 
     private boolean suppressDate;
@@ -35,7 +40,7 @@ public class CodegenCommentGenerator implements CommentGenerator {
 
     private DateFormat dateFormat;
 
-    public CodegenCommentGenerator() {
+    public CleanCommentGenerator() {
         properties = new Properties();
         suppressDate = false;
         suppressAllComments = false;

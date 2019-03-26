@@ -9,7 +9,7 @@
         <plugin type="com.github.zhangjinxu.mbgplugins.plugin.LombokDataPlugin"/>
         <plugin type="com.github.zhangjinxu.mbgplugins.plugin.BaseColumnListPlugin"/>
 
-        <commentGenerator type="com.github.zhangjinxu.mbgplugins.comment.CodegenCommentGenerator">
+        <commentGenerator type="com.github.zhangjinxu.mbgplugins.comment.CleanCommentGenerator">
             <!--使用@mbg.generated表示代码是否可以被覆盖-->
             <property name="suppressAllComments" value="false"/>
             <property name="suppressDate" value="true"/>
