@@ -56,8 +56,7 @@ public class CleanCommentGenerator implements CommentGenerator {
     /**
      * Adds a suitable comment to warn users that the element was generated, and when it was generated.
      * 增加合适的注释来警告用户，这个元素是被生成的或者是什么时候被生成的
-     * @param xmlElement
-     *            the xml element
+     * @param xmlElement the xml element
      */
     @Override
     public void addComment(XmlElement xmlElement) {
@@ -121,10 +120,8 @@ public class CleanCommentGenerator implements CommentGenerator {
      * This method adds the custom javadoc tag for. You may do nothing if you do not wish to include the Javadoc tag -
      * however, if you do not include the Javadoc tag then the Java merge capability of the eclipse plugin will break.
      * 生成一个javadoc标记，来标记这个元素是mbg生成的，可以被覆盖
-     * @param javaElement
-     *            the java element
-     * @param markAsDoNotDelete
-     *            the mark as do not delete
+     * @param javaElement the java element
+     * @param markAsDoNotDelete  the mark as do not delete
      */
     protected void addJavadocTag(JavaElement javaElement,
                                  boolean markAsDoNotDelete) {
@@ -158,8 +155,6 @@ public class CleanCommentGenerator implements CommentGenerator {
 
     /**
      * 给这个类增加注释
-     * @param innerClass
-     * @param introspectedTable
      */
     @Override
     public void addClassComment(InnerClass innerClass,
