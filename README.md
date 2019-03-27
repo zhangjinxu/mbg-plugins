@@ -80,6 +80,7 @@ public class Test {
 ````
 <plugin type="com.github.zhangjinxu.mbgplugins.plugin.OverridePlugin"/>
 ````
+###6.org.mybatis.generator.plugins包下还有好多mbg官方自带的很多好用的插件，具体作用请看官网文档。
 
 
 

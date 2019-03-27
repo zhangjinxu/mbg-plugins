@@ -8,6 +8,9 @@
 
         <plugin type="com.github.zhangjinxu.mbgplugins.plugin.LombokDataPlugin"/>
         <plugin type="com.github.zhangjinxu.mbgplugins.plugin.BaseColumnListPlugin"/>
+        <plugin type="com.github.zhangjinxu.mbgplugins.plugin.ModelToExamplePlugin"/>
+        <plugin type="com.github.zhangjinxu.mbgplugins.plugin.OverridePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
 
         <commentGenerator type="com.github.zhangjinxu.mbgplugins.comment.CleanCommentGenerator">
             <!--使用@mbg.generated表示代码是否可以被覆盖-->
