@@ -20,13 +20,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <!--写你自己的，这只是个例子-->
     <scm>
         <url>https://github.com/zhangjinxu/mbg-plugins</url>
         <connection>https://github.com/zhangjinxu/mbg-plugins.git</connection>
         <developerConnection>https://github.com/zhangjinxu/mbg-plugins</developerConnection>
     </scm>
-    <!--写你自己的，这只是个例子-->
     <developers>
         <developer>
             <name>zhangjinxu</name>
