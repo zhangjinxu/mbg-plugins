@@ -141,7 +141,7 @@ public class CleanCommentGenerator implements CommentGenerator {
     }
 
     /**
-     * 获取格式化时间
+     * @return 格式化之后的时间
      */
     protected String getDateString() {
         if (suppressDate) {
