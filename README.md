@@ -1,9 +1,9 @@
 # mbg-plugins
 一些好用的MyBatis Generator插件
 
-###1.生成干净的注释
-#####1）配置如下：
-```
+### 1.生成干净的注释
+##### 1）配置如下：
+```xml
 <commentGenerator type="com.github.zhangjinxu.mbgplugins.comment.CleanCommentGenerator">
     <!--使用@mbg.generated表示代码是否可以被覆盖-->
     <!--是否阻止生成所有注释-->
@@ -16,8 +16,8 @@
     <property name="addRemarkComments" value="true"/>
 </commentGenerator>
 ```
-#####2）实体类注释效果如下：
-````
+##### 2）实体类注释效果如下：
+````java
 /**
  *
  * 对应表: test
@@ -46,13 +46,13 @@ public class Test {
 }
 ````
 
-###2.在targetRuntime=MyBatis3Simple模式下，给xml文件生成表中所有字段引用的sql
-#####1）配置如下：
-````
+### 2.在targetRuntime=MyBatis3Simple模式下，给xml文件生成表中所有字段引用的sql
+##### 1）配置如下：
+````xml
 <plugin type="com.github.zhangjinxu.mbgplugins.plugin.BaseColumnListPlugin"/>
 ````
-#####2）效果如下：
-````
+##### 2）效果如下：
+````xml
 <sql id="Base_Column_List">
     <!--
     @mbg.generated
@@ -61,26 +61,26 @@ public class Test {
 </sql>
 ````
 
-###3.给实体类添加lombok的@Data注解
-#####1）配置如下：
-````
+### 3.给实体类添加lombok的@Data注解
+##### 1）配置如下：
+````xml
 <plugin type="com.github.zhangjinxu.mbgplugins.plugin.LombokDataPlugin"/>
 ````
-#####2）具体效果请查看test包下的实体类示例
+##### 2）具体效果请查看test包下的实体类示例
 
-###4.给实体类生成toExample方法，将model中不为空的字段转换为对应Example类中的条件
-#####1)配置如下：
-````
+### 4.给实体类生成toExample方法，将model中不为空的字段转换为对应Example类中的条件
+##### 1)配置如下：
+````xml
 <plugin type="com.github.zhangjinxu.mbgplugins.plugin.ModelToExamplePlugin"/>
 ````
 
-###5.保护实体类，Mapper接口，Mapper xml文件中自定义的内容不受再次生成的代码的覆盖
-#####1）具体规则为：注释中标有@mbg.generator标记的为自动生成的内容，下次生成可以覆盖为新的内容。
-#####2）配置如下：
-````
+### 5.保护实体类，Mapper接口，Mapper xml文件中自定义的内容不受再次生成的代码的覆盖
+##### 1）具体规则为：注释中标有@mbg.generator标记的为自动生成的内容，下次生成可以覆盖为新的内容。
+##### 2）配置如下：
+````xml
 <plugin type="com.github.zhangjinxu.mbgplugins.plugin.OverridePlugin"/>
 ````
-###6.org.mybatis.generator.plugins包下还有好多mbg官方自带的很多好用的插件，具体作用请看官网文档。
+### 6.org.mybatis.generator.plugins包下还有好多mbg官方自带的很多好用的插件，具体作用请看官网文档。
 
 
 
